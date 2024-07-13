@@ -12,7 +12,7 @@ ng build
 
 # Build the Angular app for production with the appropriate base-href
 echo "------------------Building the Angular app for production------------------"
-ng build --configuration=production --base-href "https://denisshtupa.github.io/movie-db-app/"
+ng build --configuration=production --base-href "https://finddevpartners.github.io/movie-db/"
 
 # Deploy the built app to GitHub Pages
 echo "------------------Deploying the app to GitHub Pages------------------"

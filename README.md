@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.
 
-To access deployed version on your browser, click this link here [movie-db-app](https://denisshtupa.github.io/movie-db-app/movie-db/new-movies)
+To access deployed version on your browser, click this link here [movie-db-app](https://finddevpartners.github.io/movie-db-app/movie-db/new-movies)
 
 ## Deploy to github pages
 Run first `npm run create-deploy-branch`\
