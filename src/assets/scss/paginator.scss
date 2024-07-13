@@ -1,0 +1,90 @@
+.paginator {
+  position: absolute;
+  padding: 60px 0 20px 275px;
+  transform: scale(1.5);
+  color: $db-dark-gary-1 !important;
+  cursor: pointer !important;
+}
+
+.pagination {
+  >ul>li>span {
+    padding: 5px;
+  }
+
+  >li>a,
+  >li>span {
+    border: 0;
+    border-radius: 30px !important;
+    transition: all .3s;
+    padding: 0px 11px;
+    margin: 0 3px;
+    min-width: 30px;
+    height: 30px;
+    line-height: 30px;
+    color: $dark;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: none;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+      color: $dark;
+      background-color: $db-mid-gray-2;
+    }
+  }
+
+  >li.dropdown,
+  >li.dropup {
+    display: inline-block;
+    position: relative;
+  }
+
+  >li.dropdown>a,
+  >li.dropdown>span,
+  >li.dropup>a,
+  >li.dropup>span {
+    border-radius: 5px !important;
+    border: 1px solid lighten($db-dark-gary-2, 30%);
+
+    &:hover,
+    &:focus {
+      border-radius: 5px;
+      border: 1px solid lighten($db-dark-gary-2, 30%);
+    }
+
+  }
+
+  >.active>a,
+  >.active>span {
+    color: $dark;
+    text-align: center;
+    background-color: $db-blue;
+
+    &,
+    &:focus,
+    &:hover {
+      background-color: $db-blue;
+      border-color: $db-blue;
+      color: white;
+    }
+  }
+
+  a.disabled,
+  a.disabled>i {
+    color: $db-mid-gray-2;
+    background-color: transparent;
+    cursor: default;
+
+    &,
+    &:focus,
+    &:hover {
+      background-color: transparent;
+      border-color: transparent;
+      color: $db-mid-gray-2;
+      cursor: default;
+    }
+
+  }
+
+}

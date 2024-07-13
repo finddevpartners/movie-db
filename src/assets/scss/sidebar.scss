@@ -1,0 +1,134 @@
+.movie-db-sidebar {
+  background-color: $db-dark-gary-1 !important;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  font-style: oblique;
+  font-family: cursive;
+  font-size: 19px;
+  left: 0;
+  z-index: -1;
+  padding: 80px 0 0 0;
+  width: 220px;
+
+  .nav-item {
+    margin: 0 0 10px 0;
+
+    .nav-link {
+      color: #fff;
+      border-radius: 0;
+      position: relative;
+
+      .rounded-circle {
+        width: 46px;
+        height: 46px;
+        background-color: darken($db-dark-gary-1, 10%);
+        margin: auto;
+        padding-top: 10px;
+
+        .fa-solid {
+          color: $db-vibrant-blue;
+        }
+      }
+
+      &:hover,
+      &:focus {
+        background-color: darken($db-dark-gary-1, 5%);
+      }
+
+      &.active {
+        color: $db-blue;
+
+        .rounded-circle {
+          background-color: $primary;
+
+          i {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sidebar-dropdown {
+  &.dropdown-menu {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    margin-left: 0;
+
+    .btn {
+      border-radius: 0;
+      text-align: center;
+      padding: 10px 0;
+      margin: 0;
+      color: white;
+      background-color: darken($db-dark-gary-1, 10%);
+
+      &:hover {
+        background-color: darken($db-dark-gary-1, 5%);
+      }
+
+      &.active {
+        background-color: $primary;
+      }
+    }
+  }
+}
+
+.fixed-left {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 50px);
+  padding-top: .3rem;
+  padding-bottom: 4em;
+  padding-left: 10px;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 3px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.flex-column > li > button {
+  cursor:pointer !important;
+  opacity:0.85 !important;
+}
+
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+
+.active-link {
+  background-color: $primary !important;
+  opacity: 0.6 !important;
+  color: $db-orange !important;
+  border-radius: 8px !important;
+  font-weight: bold !important;
+}

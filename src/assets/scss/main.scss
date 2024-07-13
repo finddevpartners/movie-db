@@ -1,0 +1,95 @@
+.main-position {
+  width: 100%;
+  padding-left: 12em;
+  padding-top: 3em;
+  position: sticky;
+}
+
+.grid-movie-cards {
+  background-color: $db-light-blue !important;
+  font-style: oblique;
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 40px;
+  grid-row-gap: 45px;
+  padding: 35px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: #ffd
+}
+
+@keyframes fontbulger {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+.movie-card {
+  position: relative;
+  cursor: pointer;
+  border-radius: 15px;
+  animation: fontbulger 4s 1 backwards;
+  transition: 0.6s;
+  background-color: $db-blue;
+  color: $db-indigo-blue;
+  max-width: 285px;
+  min-height: 440px
+}
+
+.movie-card:hover {
+  opacity: 0.7;
+  transition: transform .5s ease;
+  transform: scale(1.05);
+  border-radius: 15px;
+}
+
+div>a:nth-child(1)>div {
+  left: 20px;
+}
+
+.rating {
+  font-style: oblique;
+  position: absolute;
+  top: -20px;
+  left: 20%;
+  border-radius: 5px;
+  background: $warning;
+  padding: 5px 20px;
+  color: $db-dark-gary-1;
+  transform: translate(-50%);
+}
+
+.voters {
+  position: absolute;
+  font-style: oblique;
+  top: 281px;
+  right: -12%;
+  border-radius: 5px;
+  background: $warning;
+  padding: 5px 20px;
+  color: $db-dark-gary-1;
+  transform: translate(-50%);
+}
+
+.movie-car > img {
+  width: 220px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.movie-title {
+  text-align: center !important;
+  margin-top: 15px !important;
+}
+
+.movie-poster > img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
